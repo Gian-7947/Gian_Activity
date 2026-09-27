@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fool's Sanctuary - Register</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts for Gothic Aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./css/login_page_style.css">
+  <!-- Validation Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js" integrity="sha512-qu7dMuIm2f0KcKZ3BOoP4c+Hn+r4E8PbD2Ro4rmKsOyheCxcwhzQpf6SojA76dn+owqfANzfTFUTkGA+HpHjOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/validation.js"></script>
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 py-4">
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <!-- Column Setup -->
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="card lotm-card p-4 p-md-5 shadow-lg">
+          <div class="card-body">
+            <!-- Header Section -->
+            <header class="text-center mb-4">
+              <div class="symbol-icon mb-2"><i class="bi bi-magic"></i></div>
+              <h1 class="h3 card-title lotm-title">Register</h1>
+              <p class="lotm-subtitle text-muted">Register to become a Beyonder</p>
+            </header>
+            <!-- Register Form -->
+            <form id="registerForm" action="login.html" method="POST">
+              <!-- Code Name / Username -->
+              <div class="mb-3">
+                <label for="regUsername" class="form-label">Username</label>
+                <input 
+                  type="text" 
+                  class="form-control lotm-input" 
+                  id="regUsername"
+                  name="regUsername"
+                  placeholder="e.g., The Hanged Man, Justice" 
+                  required
+                >
+              </div>
+
+              <!-- Email Field -->
+              <div class="mb-3">
+                <label for="regEmail" class="form-label">Email</label>
+                <input 
+                  type="email" 
+                  class="form-control lotm-input" 
+                  id="regEmail"
+                  name="regEmail"
+                  placeholder="eg., beyonder@gmail.com" 
+                  required
+                >
+              </div>
+
+              <!-- Select Pathway -->
+              <div class="mb-3">
+                <label for="regPhoneNum" class="form-label">Phone Number</label>
+                <input 
+                  type="tel" 
+                  class="form-control lotm-input" 
+                  id="regPhoneNum"
+                  name="regPhoneNum"
+                  placeholder="e.g., +63 912 345 6789" 
+                  required
+                >
+              </div>
+
+              <!-- Password -->
+              <div class="mb-3">
+                <label for="regPassword" class="form-label">Password</label>
+                <input type="password" class="form-control lotm-input" id="regPassword" name="regPassword" placeholder="Minimum 8 characters" autocomplete="new-password" required>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn lotm-btn py-2">Register</button>
+              </div>
+
+            </form>
+
+            <!-- Navigation Link -->
+            <footer class="text-center mt-4 pt-3 border-top border-secondary">
+              <p class="mb-0 text-light small">
+                Already Registered?
+                <a href="login.html" class="lotm-link fw-bold ms-1">Login Here</a>
+              </p>
+            </footer>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

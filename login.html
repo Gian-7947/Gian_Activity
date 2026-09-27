@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fool's Sanctuary</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts for Gothic Aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./css/login_page_style.css">
+  <!--Validation Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js" integrity="sha512-qu7dMuIm2f0KcKZ3BOoP4c+Hn+r4E8PbD2Ro4rmKsOyheCxcwhzQpf6SojA76dn+owqfANzfTFUTkGA+HpHjOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/validation.js"></script>
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 py-4">
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <!-- Column Setup -->
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+        <div class="card lotm-card p-4 p-md-5 shadow-lg">
+          <div class="card-body">
+            <!-- Header Section -->
+            <header class="text-center mb-4">
+              <div class="symbol-icon mb-2"><i class="bi bi-eye"></i></div>
+              <h1 class="h3 card-title lotm-title">Tarot Club</h1>
+              <p class="lotm-subtitle text-muted">Enter the Above the Gray Fog</p>
+            </header>
+            <!-- Login Form -->
+            <form id="loginForm" action="index.html" method="GET">
+              <!-- Code Sequence / Username -->
+              <div class="mb-3">
+                <label for="honorificName" class="form-label">Username</label>
+                <input 
+                  type="text" 
+                  class="form-control lotm-input" 
+                  id="honorificName"
+                  name="honorificName"
+                  placeholder="Enter your Username" 
+                  required
+                >
+              </div>
+
+              <!-- Password -->
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control lotm-input" id="loginPassword" name="loginPassword" placeholder="Enter your Password" autocomplete="current-password" required>
+              </div>
+
+              <!-- PasswordOptions -->
+              <div class="d-flex justify-content-between align-items-center mb-4 login-options">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input lotm-checkbox" id="rememberMe">
+                  <label class="form-check-label text-light small" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="#" class="lotm-link small">Forgot Password?</a>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn lotm-btn py-2">Login</button>
+              </div>
+
+            </form>
+
+            <!-- Navigation Link -->
+            <footer class="text-center mt-4 pt-3 border-top border-secondary">
+              <p class="mb-0 text-light small">
+                Don't have an account?
+                <a href="register.html" class="lotm-link fw-bold ms-1">Register</a>
+              </p>
+            </footer>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {
+  background-color: #0b0d12;
+  color: #e0e0e0;
+  font-family: 'Playfair Display', serif;
+  min-width: 0;
+  overflow-x: hidden;
+  background-image: linear-gradient(#0b0d124d, #0b0d124d),
+  url("../Images/backlund.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main,
+.lotm-card {
+  max-width: 100%;
+}
+
+/* Card Container */
+.lotm-card {
+  background-color: #151922;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px #000000cc, 0 0 15px #d4af3726;
+}
+
+.lotm-alert {
+  width: min(90vw, 420px);
+  padding: 2rem;
+  color: #e0e0e0;
+  text-align: center;
+  background: #151922;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px #000000cc, 0 0 15px #d4af3740;
+  font-family: 'Playfair Display', serif;
+}
+
+.lotm-alert::backdrop {
+  background: #05070bcc;
+  backdrop-filter: blur(3px);
+}
+
+.lotm-alert-icon {
+  margin-bottom: 0.75rem;
+  color: #d4af37;
+  font-size: 2rem;
+  filter: drop-shadow(0 0 5px #d4af37);
+}
+
+.lotm-alert-title {
+  margin-bottom: 0.75rem;
+  color: #d4af37;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.lotm-alert-message {
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.lotm-alert-button {
+  min-width: 9rem;
+  padding: 0.55rem 1rem;
+}
+
+.lotm-alert-button:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 3px;
+}
+
+/* Styling */
+.lotm-title {
+  font-family: 'Cinzel', serif;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.lotm-subtitle {
+  color: #8a8a8a !important;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  opacity: 1;
+  overflow-wrap: anywhere;
+}
+
+.symbol-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 5px #d4af37);
+}
+
+.form-label {
+  color: #d4af37;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  overflow-wrap: anywhere;
+}
+
+.form-check-label,
+footer p {
+  overflow-wrap: anywhere;
+}
+
+footer a {
+  white-space: normal;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding-inline: 0.5rem;
+  }
+
+  .lotm-card {
+    border-radius: 6px;
+  }
+
+  .lotm-title {
+    letter-spacing: 1px;
+  }
+
+  .login-options {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* Form Inputs & Select Styling */
+.lotm-input {
+  background-color: #0b0d12;
+  border: 1px solid #2a3142;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.lotm-input:focus {
+  background-color: #0d1017;
+  border-color: #d4af37;
+  color: #ffffff;
+  box-shadow: 0 0 8px #d4af3766;
+}
+
+.lotm-input.is-invalid,
+.lotm-input.is-valid {
+  background-image: none;
+}
+
+.lotm-input.is-invalid {
+  border-color: #dc3545;
+}
+
+.lotm-input.is-valid {
+  border-color: #198754;
+}
+
+.lotm-input::placeholder {
+  color: #5a6275;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* Checkbox Styling */
+.lotm-checkbox:checked {
+  background-color: #d4af37;
+  border-color: #d4af37;
+}
+
+/* Buttons */
+.lotm-btn {
+  background-color: #800020;
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  border: 1px solid #d4af37;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.lotm-btn.cooldown {
+  opacity: 0.75 !important;
+}
+
+.lotm-btn:hover {
+  background-color: #a00028;
+  color: #d4af37;
+  box-shadow: 0 0 12px #d4af3780;
+}
+
+/* Links */
+.lotm-link {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lotm-link:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #d4af37;
+}
